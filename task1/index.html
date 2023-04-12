@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grandma's Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url('ca.jpg');
+            height: 1000px;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+        }
+        .left{
+            /* border: 2px solid red; */
+            display: inline-block;
+            position: absolute;
+            left: 32px;
+            top: 18px;
+        }
+        .mid{
+            /* border: 2px solid rgb(34, 0, 255); */
+            border-radius: 500px;
+            display: block;
+            width: 45%;
+            margin: 18px auto;
+            /* background-color: rgb(205, 205, 205); */
+        }
+        .right{
+            /* border: 2px solid rgb(0, 255, 30); */
+            display: inline-block;
+            position: absolute;
+            right: 32px;
+            top: 18px;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        ul {
+            display: block;
+            list-style-type: disc;
+            margin-block-start: 1em;
+            margin-block-end: 1em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            padding-inline-start: 40px;
+        }
+        li {
+            display: list-item;
+            text-align: -webkit-match-parent;
+        }
+        .navbar li{
+            display: inline-block;
+            /* font-size: 20px; */
+            font-size: 30px;
+        }
+        .navbar li a{
+            text-decoration: none;
+            padding: 34px 23px;
+        }
+        .navbar li a:hover {
+            text-decoration: underline;
+            padding: 34px 23px;
+            color: #c71515;
+        }
+        .left img{
+            width: 100px;
+            height: 100px;
+            overflow: clip;
+            overflow-clip-margin: content-box;
+        }
+
+        .left div{
+            text-align: center;
+            font-size: 30px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: #c71515;
+            text-decoration:overline;
+            line-height: 20px;
+        }
+        .btn{
+            margin: 0px 9px;
+            padding: 3px 4px;
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-color: rgb(234, 150, 40);
+        }
+        .container{
+            display: inline-block;
+            margin: -1px 15px;
+            padding: 20px 20px;
+            width: 33%;
+            border-radius: 20px;
+            position: absolute;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-size: 25px;
+            color: #c71515;
+            top: 220px;
+        }
+        .container h3{
+            text-decoration: underline;
+        }
+        .ab{
+            display: inline-block;
+            margin: 20px 37px;
+            padding: 158px 18px;
+            width: 33%;
+            border-radius: 2px;
+            position: absolute;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            bottom: -100px;
+            font-size: 25px;
+            order: 2px;
+            color: #c71515;
+            
+        }
+        .bc{
+            text-decoration: underline;
+        }
+        .bc h3{
+            font-style:normal;
+            font-size: x-large;
+            bottom: 2PX;
+            display: inline-block;
+            color: #c71515;
+        }
+        .cake{
+            display: inline-block;
+            margin: -70px 221px;
+            padding: 7px 18px;
+            width: 45%;
+            border-radius: 2px;
+            position: absolute;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            bottom: -100px;
+            font-size: 25px;
+            color: #c71515;
+        }
+        .bt{
+            margin: 0px 9px;
+            padding: 3px 10px;
+            border: 2px solid grey;
+            border-radius: 20px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        .bt:hover{
+            background-color: burlywood;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="lo.png" alt="">
+            <div>Grandma's Bakery</div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul></div>
+        <div class="right">
+            <button class="btn">Call us</button>
+            <button class="btn">Email</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>FRESH BAKED TO YOUR DOOR</h3>
+        It's essential for every party to have cake.
+        If there's no cake, then it's only a meeting
+    </div>
+    <div class="ab">
+        <h3 class="bc">Daily, fresh and always tasty</h3>
+        To get more information contact us or send us an email fo more information
+    </div><hr>
+    <div class="cake">
+        We are Grandma's Bakery, your most <br>favourite pastry shop. Now providing <br>online delivery and shopping to you.
+        <br><br>
+        <button class="bt">More About Us</button>
+    </div>
+</body>
+</html>
